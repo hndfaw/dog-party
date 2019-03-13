@@ -63,13 +63,13 @@ var dogName = document.querySelector('.dog_name');
 
 window.addEventListener('resize', function() {
 
-	if(window.innerWidth >= 798) {
+	if(window.innerWidth >= 811) {
 		myNavigator.style.height = '60px';
 		navigatorLinks.style.display = 'block';
 		lineThree.style.opacity = null;
 		lineTwo.style.transform = null;
 		lineOne.style.transform = null;
-	} else if (window.innerWidth < 798 ) {
+	} else if (window.innerWidth < 811 ) {
 		burgerValue  = "close";
 		navigatorLinks.style.display = 'none';
 		lineThree.style.opacity = null;
