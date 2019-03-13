@@ -1,0 +1,412 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navigator {
+	background-color: #75e2e6;
+	width: 100%;
+	height: 60px;
+	border-bottom: #048eaa solid 2px;
+	transition: 0.2s;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.logo_image {
+	height: 45px;
+	margin-top: 0.3em;
+	margin-left: 1em;
+}
+
+.navigator_links {
+	border: #75e2e6 solid 3px;
+	width: 100%;
+	height: 180px;
+	background-color: #75e2e6;
+	font-family: verdana, sans-serif;
+	margin-top: 8px;
+	display: none;
+}
+
+li {
+	margin-top: 0.8em;
+	list-style: none;
+	background-color: rgba(255,255,255,0.2);
+	padding-left: 1.25em;
+	padding-right: 1.25em;
+	padding-top: 0.6em;
+	height: 40px;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	color: rgba(0,0,0,0.5);
+	display: block;
+}
+
+
+li:hover {
+	color: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+/* burger icon starts here */
+
+
+.burger_button {
+  width: 27px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  float: right;
+  margin-top: 1em;
+  margin-right: 1em;
+  position: relative;
+  background-color: none;
+}
+
+
+.lines {
+  width: 100%;
+  background: #000000;
+  height: 5px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.line_two,
+.line_three  {
+	margin-top: 5px;
+}
+
+/* arrows icon start here */
+
+.arrows_icon {
+	position: absolute;
+	top: 0;
+	width: 27px;
+	display: none;
+}
+
+
+
+.arrow_two {
+	margin-top: -8px;
+}
+
+/* part one of content start here */
+
+.upper_content {
+	background-image: url("images/park2.jpg");
+	background-size: 140% 100%;
+	background-position: center;
+	width: 100%;
+	height: 300px;
+	margin-top: 60px;
+}
+
+
+
+
+.upper_content_title {
+	font-family: verdana, sans-serif;
+	text-align: center;
+	padding-top: 1em;
+	color: #ffffff;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+span.dog_name {
+	font-weight: bold;
+}
+
+/* all dog style */
+
+.dog_image {
+	height: 25%;
+	max-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-radius: 50%;
+	margin-top: 1em;
+	border: #048eaa solid 2px;
+}
+
+.upper_content_details {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 200px;
+	margin-top: 1em;
+}
+
+label.dog_name_label {
+	color: white;
+	font-family: arial, sans-serif;
+}
+
+.dog_name_input {
+	margin-top: 1em;
+	border-radius: 2px;
+	border: 1px #ffffff solid;
+	outline: none;
+	height: 2.5em;
+	width: 200px;
+}
+
+.name_dog_botton {
+	margin-top: 1em;
+	border-radius: 2px;
+	border: 1px #ffffff solid;
+	outline: none;
+	height: 2.5em;
+	width: 200px;
+	background-color: #75e2e6;
+}
+
+
+
+.name_dog_botton:active {
+	background-color: #048eaa;
+}
+
+/* Lower part of website start here ....*/
+
+.dog_tile {
+	width: 100%;
+	height: auto;
+	border-bottom: #75e2e6 1px solid;
+}
+
+
+
+.dog_tile_title {
+	text-align: center;
+	font-family: arial;
+	margin-top: 1em;
+	color: rgba(0,0,0,0.3);
+}
+
+
+.tile_text {
+	font-family: arial, sans-serif;
+	margin-top: 1em;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	color: rgba(0,0,0,0.3);
+}
+
+.dog_tile_title1,
+.tile_text1 {
+	color: black;
+}
+
+
+
+.tile_button {
+	margin-top: 3em;
+	border-radius: 2px;
+	border: 1px #ffffff solid;
+	outline: none;
+	height: 2.5em;
+	width: 200px;
+	background-color: rgba(0,0,0,0.3);
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	color: #ffffff;
+	margin-bottom: 1em;
+}
+
+.tile_button1 {
+	background-color: #048eaa;
+}
+
+/* footer starts here */
+
+.footer {
+	width: 100%;
+	height: 180px;
+	background-color: #048eaa;
+}
+
+.text_in_footer {
+	font-family: verdana, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 2.7em;
+	font-size: 16px;
+}
+
+.footer_icons_container {
+	height: 40px;
+	width: 225px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.8em;
+	border: 1px solid transparent;
+}
+
+.twitter, .instagram, .facebook {
+	margin-right: 1em;
+}
+
+.footer_icon {
+	height: 100%;
+}
+
+
+/* breakpoint one 1 */ 
+
+@media screen and (min-width: 798px) {
+
+	.burger_button {
+		display: none;
+		border
+	}
+
+	.navigator_links {
+		border: #75e2e6 solid 3px;
+		width: 470px;
+		height: 50px;
+		background-color: #75e2e6;
+		font-family: verdana, sans-serif;
+		margin-top: -5px;
+		display: block;
+		float: right;
+		display: block;
+		border: 1px transparent solid;
+	}
+
+	li {
+		background-color: transparent;
+		display: inline-block;
+	}
+
+
+
+	.upper_content {
+		background-image: url("images/park2.jpg");
+		background-size: 140% 100%;
+		background-position: center;
+		width: 100%;
+		height: 470px;
+		margin-top: 60px;
+	}
+
+	.dog_image {
+		height: 35%;
+		max-height: 160px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		border-radius: 50%;
+		margin-top: 1em;
+		border: #048eaa solid 5px;
+
+	}
+
+	.tile_text {
+		font-family: arial, sans-serif;
+		margin-top: 1em;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		color: rgba(0,0,0,0.3);
+	}
+
+	.tile_text1 {
+		color: black;
+	}
+
+	.upper_content_title {
+		font-family: verdana, sans-serif;
+		text-align: center;
+		padding-top: 1em;
+		color: #ffffff;
+		font-weight: normal;
+		font-size: 32px;
+	}
+
+	.upper_content_details {
+		width: 400px;
+		margin-top: 2em;
+	}
+
+	.dog_name_input {
+		height: 3em;
+		width: 400px;
+		font-size: 16px;
+	}
+
+	.name_dog_botton {
+		height: 3em;
+		width: 400px;
+		font-size: 16px;
+	}
+
+
+
+	.tile_button {
+		height: 4em;
+		width: 250px;
+	}
+
+	.dog_tile {
+		width: 33%;
+		height: 560px;
+		border-bottom: #75e2e6 1px solid;
+		display: inline-block;
+		border: 0px solid red;
+	}
+
+}
+
+/* breakpoint two 2 */
+
+@media screen and (min-width: 800px) {
+	.dog_tile {
+		height: 540px;
+	}
+}
+
+
+/* breakpoint three 3 */ 
+
+@media screen and (min-width: 1080px) {
+	.page {
+		width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+		border-left: 1px #000 solid;
+		border-right: 1px #000 solid;
+		border-bottom: 1px #000 solid;
+	}
+
+	.dog_tile {
+		height: 500px;
+	}
+
+	.navigator {
+		width: 1080px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		top: 0;
+		left: auto;
+		border-left: 1px #000 solid;
+		border-right: 1px #000 solid;
+	}
+}
+
+
