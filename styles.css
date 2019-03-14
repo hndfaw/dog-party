@@ -13,6 +13,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
+	z-index: 99;
 }
 
 .logo_image {
@@ -101,13 +102,37 @@ li:hover {
 
 /* part one of content start here */
 
-.upper_content {
-	background-image: url("images/park2.jpg");
+.upper_content_1 {
+	background-image: url("images/park.jpg");
 	background-size: 140% 100%;
 	background-position: center;
 	width: 100%;
 	height: 300px;
 	margin-top: 60px;
+}
+
+.upper_content {
+	width: 100%;
+	height: 300px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.upper_content_3 {
+	width: 100%;
+	height: 100%;
+	position: absolute;;
+	top: 0;
+	left: 0;
+}
+
+.upper_content_2 {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	top:0;
+	left: 0;
 }
 
 
@@ -295,13 +320,41 @@ label.dog_name_label {
 
 
 	.upper_content {
-		background-image: url("images/park2.jpg");
-		background-size: 140% 100%;
-		background-position: center;
 		width: 100%;
 		height: 470px;
 		margin-top: 60px;
 	}
+
+
+
+	.upper_content_1 {
+		background-size: 140% 190%;
+		background-position: center;
+		width: 100%;
+		height: 470px;
+	}
+
+	.upper_content_2 {
+		position: absolute;
+		background-color: rgba(0,0,0,0.5);
+		height: 100%;
+		width: 100%;
+		top:0;
+		left: 0;
+	}
+
+
+	.upper_content_3 {
+		width: 100%;
+		height: 100%;
+		position: absolute;;
+		top: 0;
+		left: 0;
+	}
+
+	
+
+
 
 	.dog_image {
 		height: 35%;
