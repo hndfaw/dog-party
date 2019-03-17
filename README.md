@@ -9,5 +9,7 @@ I added JavaScript to open the menu when the user clicks on the burger button an
 `ok` I changed this solustion by using the original image and adding a new layer on the top of it using CSS with the black background-color and opacity of 0.5.
 
 
-![alt text](https://github.com/hndfaw/dog-party/blob/master/images/project.jpg)
+![This is alt text one!](https://github.com/hndfaw/dog-party/blob/master/images/project.jpg)
+
+![alt text](https://github.com/hndfaw/dog-party/blob/master/images/my_website.jpg)
 
