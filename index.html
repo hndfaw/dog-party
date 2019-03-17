@@ -18,9 +18,30 @@
 			</div>
 			<div class="navigator_links">
 				<ul>
-					<li class="list_item list_item1">How To Dog</li>
-					<li class="list_item list_item2">What is Dogs</li>
-					<li class="list_item list_item3">Facts From Dog</li>
+					<li class="list_item list_item1">
+					How To Dog
+					<div class="tooltip">
+						<div class="tooltip_arrow"></div>
+						<div class="tooltip_text tooltip_text1">Click to hide the text</div>
+					</div>
+					</li>
+					
+					<li class="list_item list_item2">
+					What is Dogs
+					<div class="tooltip">
+						<div class="tooltip_arrow"></div>
+						<div class="tooltip_text tooltip_text2">Click to hide the text</div>
+					</div>
+					</li>
+					
+					<li class="list_item list_item3">
+					Facts From Dog
+					<div class="tooltip">
+						<div class="tooltip_arrow"></div>
+						<div class="tooltip_text tooltip_text3">Click to hide the text</div>
+					</div>
+					</li>
+					
 				</ul>
 			</div>
 		</div>
@@ -30,10 +51,10 @@
 				<div class="upper_content_2"></div>
 				<div class="upper_content_3">
 				<h1 class="upper_content_title">A Site About <span class="dog_name">Some Dogs</span></h1>
-				<img class="dog_image" src="images/dog1-sq.jpg">
+				<img class="dog_image main_dog_image" src="images/dog1-sq.jpg">
 				<div class="upper_content_details">
 					<label class="dog_name_label">Name</label>
-					<input class="dog_name_input" type="text" placeholder="Type your dog name here...">
+					<input class="dog_name_input" type="text" placeholder=" Type your dog name here...">
 					<button type="button" class="name_dog_botton">Name This Dog</button>
 				</div>
 				</div>
@@ -41,38 +62,38 @@
 			<div class="content_lower">
 				<div class="dog_tile">
 					<h2 class="dog_tile_title dog_tile_title1">How To Dog</h2>
-					<img class="dog_image" src="images/dog2-sq.jpg">
-					<p class="tile_text tile_text1">
-						Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
+						<img class="dog_image dog_image1" src="images/dog2-sq.jpg">
+						<p class="tile_text tile_text1">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.
+						</p>
 					<button type="button" class="tile_button tile_button1">How</button>
 				</div>
 				<div class="dog_tile">
 					<h2 class="dog_tile_title dog_tile_title2">What Is Dogs</h2>
-					<img class="dog_image" src="images/dog3-sq.jpg">
-					<p class="tile_text tile_text2">
-						Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
+						<img class="dog_image dog_image2" src="images/dog3-sq.jpg">
+						<p class="tile_text tile_text2">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.
+						</p>
 					<button type="button" class="tile_button tile_button2">What</button>
 				</div>
 				<div class="dog_tile">
 					<h2 class="dog_tile_title dog_tile_title3">Facts From Dog</h2>
-					<img class="dog_image" src="images/dog4-sq.jpg">
-					<p class="tile_text tile_text3">
-						Lorem ipsum dolor sit amet, consectetur adipiscing
-						elit, sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat.
-					</p>
+						<img class="dog_image dog_image3" src="images/dog4-sq.jpg">
+						<p class="tile_text tile_text3">
+							Lorem ipsum dolor sit amet, consectetur adipiscing
+							elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim ad minim veniam, quis nostrud
+							exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.
+						</p>
 					<button type="button" class="tile_button tile_button3">Facts</button>
 				</div>
 			</div>
@@ -84,6 +105,28 @@
 				<a class="instagram" href=""><img class="footer_icon" src="images/instagram.svg"></a>
 				<a class="facebook" href=""><img class="footer_icon" src="images/facebook.svg"></a>
 				<a class="linkedin" href="" ><img class="footer_icon" src="images/linkedin.svg"></a>
+				<div class="update_text_form">
+					<button class="update_text_button">Open Text Editor</button>
+					<p class="text_editer_header">Edit page content here</p>
+					<textarea class="text_area"></textarea>
+					<div class="char_counter">
+						<p class="counter">Characters: <span class="char">235</span></p>
+					</div>
+					<form>
+						<label>
+					  <input type="radio" name="tile" class="update_tile1"> How To Dog</label>
+					  <br>
+					  <label>
+					  <input type="radio" name="tile" class="update_tile2"> What Is Dogs
+					</label>
+					<br>
+					<label>
+					  <input type="radio" name="tile" class="update_tile3"> Facts From Dog 
+					</label>
+					<br> 
+					  <input type="button" value="Update" class="update_btn"><br>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>

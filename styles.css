@@ -16,20 +16,48 @@
 	z-index: 99;
 }
 
+.tooltip_arrow {
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	margin: auto;
+	margin-top: -7.5px;
+	transform: rotate(45deg);
+	position: relative;
+}
+
+.tooltip {
+	position: absolute;
+	width: 150px;
+	height: 30px;
+	background-color: rgba(255,255,255,1);
+	border-radius: 5px;
+	bottom: -35px;
+	display: none;
+	font-size: 12px;
+	text-align: center;
+	color: black;
+}
+
+
+
 .logo_image {
 	height: 45px;
 	margin-top: 0.3em;
 	margin-left: 1em;
 }
 
+
+
 .navigator_links {
 	border: #75e2e6 solid 3px;
 	width: 100%;
 	height: 180px;
-	background-color: #75e2e6;
+	background-color: transparent;
 	font-family: verdana, sans-serif;
 	margin-top: 8px;
 	display: none;
+	border-color: transparent;
 }
 
 li {
@@ -43,13 +71,14 @@ li {
 	border-radius: 2px;
 	border: 1px solid transparent;
 	cursor: pointer;
-	color: rgba(0,0,0,0.5);
+	color: black;
 	display: block;
+	position: relative;
 }
 
 
 li:hover {
-	color: rgba(0,0,0,0.8);
+	color: rgba(0,0,0,0.5);
 }
 
 
@@ -162,6 +191,7 @@ span.dog_name {
 	border-radius: 50%;
 	margin-top: 1em;
 	border: #048eaa solid 2px;
+	transition: 0.3s;
 }
 
 .upper_content_details {
@@ -184,6 +214,7 @@ label.dog_name_label {
 	outline: none;
 	height: 2.5em;
 	width: 200px;
+	padding-left: 5px;
 }
 
 .name_dog_botton {
@@ -194,13 +225,11 @@ label.dog_name_label {
 	height: 2.5em;
 	width: 200px;
 	background-color: #75e2e6;
+	cursor: pointer;
 }
 
 
 
-.name_dog_botton:active {
-	background-color: #048eaa;
-}
 
 /* Lower part of website start here ....*/
 
@@ -210,13 +239,17 @@ label.dog_name_label {
 	border-bottom: #75e2e6 1px solid;
 }
 
+.magic_box {
+	border: red 1px solid;
+}
 
 
 .dog_tile_title {
 	text-align: center;
 	font-family: arial;
 	margin-top: 1em;
-	color: rgba(0,0,0,0.3);
+	color: black;
+	transition: 0.3s;
 }
 
 
@@ -227,13 +260,10 @@ label.dog_name_label {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 14px;
-	color: rgba(0,0,0,0.3);
+	color: black;
+	transition: 0.3s;
 }
 
-.dog_tile_title1,
-.tile_text1 {
-	color: black;
-}
 
 
 
@@ -244,17 +274,17 @@ label.dog_name_label {
 	outline: none;
 	height: 2.5em;
 	width: 200px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: #048eaa;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	color: #ffffff;
 	margin-bottom: 1em;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-.tile_button1 {
-	background-color: #048eaa;
-}
+
 
 /* footer starts here */
 
@@ -262,6 +292,7 @@ label.dog_name_label {
 	width: 100%;
 	height: 180px;
 	background-color: #048eaa;
+	position: relative;
 }
 
 .text_in_footer {
@@ -292,7 +323,7 @@ label.dog_name_label {
 
 /* breakpoint one 1 */ 
 
-@media screen and (min-width: 811px) {
+@media screen and (min-width: 810px) {
 
 	.burger_button {
 		display: none;
@@ -303,7 +334,7 @@ label.dog_name_label {
 		border: #75e2e6 solid 3px;
 		width: 470px;
 		height: 50px;
-		background-color: #75e2e6;
+		background-color: transparent;
 		font-family: verdana, sans-serif;
 		margin-top: -5px;
 		display: block;
@@ -353,9 +384,6 @@ label.dog_name_label {
 	}
 
 	
-
-
-
 	.dog_image {
 		height: 35%;
 		max-height: 160px;
@@ -365,6 +393,7 @@ label.dog_name_label {
 		border-radius: 50%;
 		margin-top: 1em;
 		border: #048eaa solid 5px;
+		transition: 0.3s;
 
 	}
 
@@ -375,12 +404,13 @@ label.dog_name_label {
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 16px;
-		color: rgba(0,0,0,0.3);
+		color: black;
+		transition: 0.3s;
+		height: 200px;
+		overflow: hidden;
+		transition: 0.3s;
 	}
 
-	.tile_text1 {
-		color: black;
-	}
 
 	.upper_content_title {
 		font-family: verdana, sans-serif;
@@ -406,6 +436,9 @@ label.dog_name_label {
 		height: 3em;
 		width: 400px;
 		font-size: 16px;
+		padding-left: 5px;
+		cursor: pointer;
+		cursor: pointer;
 	}
 
 
@@ -413,6 +446,8 @@ label.dog_name_label {
 	.tile_button {
 		height: 4em;
 		width: 250px;
+		cursor: pointer;
+		transition: 0.3s;
 	}
 
 	.dog_tile {
@@ -423,20 +458,34 @@ label.dog_name_label {
 		border: 0px solid red;
 	}
 
+	li:hover div.tooltip {
+	display: block;
 }
 
-/* breakpoint two 2 */
-
-@media screen and (min-width: 800px) {
-	.dog_tile {
-		height: 540px;
-	}
 }
 
 
-/* breakpoint three 3 */ 
+
+
+/* breakpoint two 2 */ 
 
 @media screen and (min-width: 1080px) {
+
+	.tile_text {
+		font-family: arial, sans-serif;
+		margin-top: 1em;
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 16px;
+		color: black;
+		transition: 0.3s;
+		height: 150px;
+		overflow: hidden;
+		transition: 0.3s;
+	}
+
+
 	.page {
 		width: 1080px;
 		margin-left: auto;
@@ -460,6 +509,86 @@ label.dog_name_label {
 		border-left: 1px #000 solid;
 		border-right: 1px #000 solid;
 	}
+}
+
+/* updating text start here */
+
+.update_text_button {
+	position: absolute;
+	right: 20px;
+	top: -28px;
+	background-color: rgba(240,240,240,0.96);
+	height: 28px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border: gray solid 1px;
+	border-bottom: transparent 1px solid;
+	width: 120px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	color: gray;
+}
+
+.update_text_button:hover {
+	color: black;
+}
+
+.text_editer_header {
+	margin-top: 10px;
+	font-family: verdana, sans-serif;
+	margin-left: 10px;
+	font-size: 13px;
+}
+
+
+.update_text_form {
+	width: 300px;
+	height: 400px;
+	background-color: rgba(240,240,240,0.96);
+	position: fixed;
+	bottom: 20px;
+	right: 2px;
+	border: gray solid 1px;
+	border-radius: 5px;
+	transition: 0.3s;
+	transform: translateY(448px);
+}
+
+.text_area {
+	margin: 10px;
+	margin-top: 16px;
+	width: 280px;
+	max-width: 280px;
+	min-width: 280px;
+	height: 240px;
+	max-height: 240px;
+	min-height: 240px;
+	outline: none;
+	font-size: 18px;
+	padding: 8px;
+}
+
+form {
+	font-family: verdana, sans-serif;
+	font-size: 11px;
+	margin-left: 10px;
+	margin-top: 8px;
+}
+
+input {
+	margin-bottom: 9px;
+}
+
+.char_counter {
+	position: absolute;
+	top: 25px;
+	right: 5px;
+	height: 15px;
+	width: 95px;
+	font-size: 11px;
+	font-family: verdana, sans-serif;
+	color: gray;
 }
 
 
