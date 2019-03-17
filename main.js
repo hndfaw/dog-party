@@ -223,7 +223,6 @@ tileButton1.addEventListener('click', dogOne);
 			listItem1.style.color = 'black';
 			tooltipText1.innerHTML = 'Click to hide the text';
 			dogOneValue = 'open';
-			tileButton1.style.backgroundColor = 'rgb(48,80,155)';
 		}
 	} else {
 
@@ -277,7 +276,6 @@ tileButton2.addEventListener('click', dogTwo);
 				listItem2.style.color = 'black';
 				tooltipText2.innerHTML = 'Click to hide the text';
 				dogTwoValue = 'open';
-				tileButton2.style.backgroundColor = 'rgb(48,80,155)';
 			}
 		} else {
 			if (dogTwoValue == 'open') {
@@ -329,7 +327,6 @@ tileButton3.addEventListener('click', dogThree);
 					listItem3.style.color = 'black';
 					tooltipText3.innerHTML = 'Click to hide the text';
 					dogThreeValue = 'open';
-					tileButton3.style.backgroundColor = 'rgb(48,80,155)';
 			}
 
 		} else {
