@@ -28,5 +28,5 @@ I added JavaScript to open the menu when the user clicks on the burger button an
 
 ![Image of my website](https://github.com/hndfaw/dog-party/blob/master/images/my_website.jpg)
 
-### 4. Link to ![my website](https://github.com/hndfaw/dog-party/blob/master/images/my_website.jpg)
+### 4. Link to [my website](https://github.com/hndfaw/dog-party/blob/master/images/my_website.jpg)
  on GitHub.
