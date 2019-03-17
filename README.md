@@ -7,3 +7,7 @@ I added JavaScript to open the menu when the user clicks on the burger button an
 ~`Solution` I change the opacity of Park Image in photoshop to 0.5.~
 
 `ok` I changed this solustion by using the original image and adding a new layer on the top of it using CSS with the black background-color and opacity of 0.5.
+
+
+![alt text](https://github.com/hndfaw/dog-party/blob/master/images/project.jpg)
+
